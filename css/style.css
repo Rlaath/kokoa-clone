@@ -4,10 +4,16 @@
 
 /* components */
 @import "/css/components/status-bar.css";
+@import "/css/components/nav-bar.css";
+@import "/css/components/screen-header.css";
+@import "/css/components/user-component.css";
 
 /* screens */
 @import "/css/screens/login.css";
+@import "/css/screens/friends-display.css";
 
-body{font-family: 'Ubuntu', sans-serif;
+body{
+    font-family: 'Ubuntu', sans-serif;
+	color: rgb(62, 60, 60);
 }
 
