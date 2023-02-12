@@ -1,5 +1,12 @@
 :root{
     /* color */
     --color-yellow: #ffec42;
+    --color-dark-grey : rgba(0,0,0,0.5);
+    --color-light-grey : rgba(0,0,0,0.3);
+
+    /* size */
     --horizontal-space : 20px;
+
+    /* border */
+    --border-main : 1px solid rgba(0, 0, 0, 0.3);
 }

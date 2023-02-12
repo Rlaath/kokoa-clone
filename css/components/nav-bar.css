@@ -1,12 +1,13 @@
 .nav__list{
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(107, 107, 107, 0.3);
+    border-top: var(--border-main);
     padding: 20px 30px;
     position: fixed;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color: rgba(243, 239, 239, 0.81);
 }
 
 .nav__link{
@@ -18,13 +19,3 @@
     left: 10px;
 }
 
-.nav__alert{
-    background-color: tomato;
-    display: block;
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    left: 18px;
-    bottom: 15px;
-}
