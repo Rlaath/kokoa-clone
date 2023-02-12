@@ -7,6 +7,7 @@
 @import "/css/components/nav-bar.css";
 @import "/css/components/screen-header.css";
 @import "/css/components/user-component.css";
+@import "/css/components/badge.css";
 
 /* screens */
 @import "/css/screens/login.css";
@@ -17,3 +18,6 @@ body{
 	color: rgb(62, 60, 60);
 }
 
+.main-screen{
+    padding: 0 var(--horizontal-space);
+}
