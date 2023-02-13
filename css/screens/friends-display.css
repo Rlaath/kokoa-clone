@@ -28,3 +28,42 @@
     color: var(--color-dark-grey);
 }
 
+#splash-screen{
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    animation: hideSplashScreen 1s ease-in forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes hideSplashScreen {
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes gearSpin{
+    from{
+        transform: none;
+    
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+
+.screen-header_icons .fa-gear:hover{
+    animation: gearSpin 1s linear infinite;
+}
