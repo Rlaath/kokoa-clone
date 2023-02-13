@@ -4,6 +4,7 @@
     background-color: #fbf6f6;
     padding: 15px 0;
     margin: 15px;
+    margin-top: -15px;
 }
 
 #friends-display-link i{
@@ -15,7 +16,7 @@
     padding: 0 var(--horizontal-space);
 }
 .friends-screen__channel{
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: var(--border-main);
     margin-top: 15px;
     padding: 15px 0;
 }
@@ -24,6 +25,45 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-dark-grey);
 }
 
+#splash-screen{
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    animation: hideSplashScreen 1s ease-in forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes hideSplashScreen {
+    from{
+        opacity: 1;
+
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes gearSpin{
+    from{
+        transform: none;
+    
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+
+.screen-header_icons .fa-gear:hover{
+    animation: gearSpin 1s linear infinite;
+}

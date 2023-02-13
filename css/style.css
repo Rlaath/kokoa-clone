@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
 @import "reset.css";
 @import "variables.css";
 
@@ -7,13 +7,26 @@
 @import "/css/components/nav-bar.css";
 @import "/css/components/screen-header.css";
 @import "/css/components/user-component.css";
+@import "/css/components/badge.css";
+@import "/css/components/reddot.css";
+@import "/css/components/icon-row.css";
+@import "/css/components/alt-header.css";
 
 /* screens */
 @import "/css/screens/login.css";
 @import "/css/screens/friends-display.css";
+@import "/css/screens/find.css";
+@import "/css/screens/more.css";
+@import "/css/screens/settings.css";
+@import "/css/screens/chat.css";
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto Slab', serif;
 	color: rgb(62, 60, 60);
+
+
 }
 
+.main-screen{
+    padding: 0 var(--horizontal-space);
+}
