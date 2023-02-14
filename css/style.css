@@ -3,22 +3,22 @@
 @import "variables.css";
 
 /* components */
-@import "/css/components/status-bar.css";
-@import "/css/components/nav-bar.css";
-@import "/css/components/screen-header.css";
-@import "/css/components/user-component.css";
-@import "/css/components/badge.css";
-@import "/css/components/reddot.css";
-@import "/css/components/icon-row.css";
-@import "/css/components/alt-header.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/reddot.css";
+@import "components/icon-row.css";
+@import "components/alt-header.css";
 
 /* screens */
-@import "/css/screens/login.css";
-@import "/css/screens/friends-display.css";
-@import "/css/screens/find.css";
-@import "/css/screens/more.css";
-@import "/css/screens/settings.css";
-@import "/css/screens/chat.css";
+@import "screens/login.css";
+@import "screens/friends-display.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body{
     font-family: 'Roboto Slab', serif;
