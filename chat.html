@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat - Kokoa Clone</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat - Kokoa Clone</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+	<body id="chat-screen">
+		<div class="status-bar">
+			<div class="status-bar__column">
+				<span>No Service</span>
+				<i class="fa-solid fa-wifi"></i>
+			</div>
+			<div class="status-bar__column">
+				<span>18:43</span>
+			</div>
+			<div class="status-bar__column">
+				<span>110%</span>
+				<i class="fa-solid fa-battery-full"></i>
+				<i class="fa-solid fa-bolt"></i>
+			</div>
+		</div>
 
-<body id="chat-screen">
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span>No Service</span>
-      <i class="fa-solid fa-wifi"></i>
-    </div>
-    <div class="status-bar__column">
-      <span>18:43</span>
-    </div>
-    <div class="status-bar__column">
-      <span>110%</span>
-      <i class="fa-solid fa-battery-full"></i>
-      <i class="fa-solid fa-bolt"></i>
-    </div>
-  </div>
+		<header class="alt-header">
+			<div class="alt-column">
+				<a href="chats.html"><i class="fa-solid fa-chevron-left"></i></a>
+			</div>
+			<div class="alt-column">
+				<span class="alt-column__title">Sohee</span>
+			</div>
+			<div class="alt-column">
+				<span><i class="fa-solid fa-magnifying-glass"></i></span>
+				<span><i class="fa-solid fa-bars"></i></span>
+			</div>
+		</header>
 
-    <header class="alt-header">
-      <div class="alt-column">
-      <a href="chats.html"><i class="fa-solid fa-chevron-left"></i></a>
-      </div>
-      <div class="alt-column">
-        <span class="alt-column__title">Sohee</span>
-      </div>
-      <div class="alt-column">
-        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-        <span><i class="fa-solid fa-bars"></i></span>
-      </div>
-    </header>
+		<main class="main-screen main-chat">
+			<div class="chat-timestamp">Tuesday, June 30, 2020</div>
+			<div class="message-row message-row__friend">
+				<img src="screenshots/avartar.jpg" alt="" />
+				<div class="message-row__content">
+					<span class="message-row__author">Sohee</span>
+					<div class="message-row__info">
+						<span class="message-row__bubble">Hi!</span>
+						<span class="message-row__time">21:27</span>
+					</div>
+				</div>
+			</div>
+			<div class="message-row message-row__own">
+				<div class="message-row__content">
+					<div class="message-row__info">
+						<span class="message-row__bubble">How are you?</span>
+						<span class="message-row__time">21:27</span>
+					</div>
+				</div>
+			</div>
+		</main>
 
-  <main class="main-screen main-chat">
-    <div class="chat-timestamp">
-      Tuesday, June 30, 2020
-    </div>
-    <div class="message-row message-row__friend">
-      <img src="http://127.0.0.1:5500/screenshots/KakaoTalk_20230211_151543831.jpg" alt="">
-      <div class="message-row__content">
-        <span class="message-row__author">Sohee</span>
-        <div class="message-row__info">
-          <span class="message-row__bubble">Hi!</span>
-          <span class="message-row__time">21:27</span>
-        </div>
-      </div>
-    </div>
-    <div class="message-row message-row__own">
-      <div class="message-row__content">
-        <div class="message-row__info">
-          <span class="message-row__bubble">How are you?</span>
-          <span class="message-row__time">21:27</span>
-        </div>
-      </div>
-    </div>
-  </main>
+		<div class="reply">
+			<div class="reply-column">
+				<i class="fa-regular fa-square-plus"></i>
+			</div>
+			<div class="reply-column">
+				<input type="text" placeholder="Write a message" />
+				<i class="fa-regular fa-face-smile"></i>
+				<button><i class="fa-solid fa-arrow-up"></i></button>
+			</div>
+		</div>
 
-  <div class="reply">
-    <div class="reply-column">
-    <i class="fa-regular fa-square-plus"></i>
-    </div>
-    <div class="reply-column">
-      <input type="text" placeholder="Write a message">
-      <i class="fa-regular fa-face-smile"></i>
-      <button><i class="fa-solid fa-arrow-up"></i></button>
-    </div>
-  </div>
-
-
-  <script src="https://kit.fontawesome.com/223a17b65d.js" crossorigin="anonymous"></script>
-</body>
-
+		<script
+			src="https://kit.fontawesome.com/223a17b65d.js"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
