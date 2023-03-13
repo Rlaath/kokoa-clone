@@ -1,223 +1,210 @@
-#chat-screen{
-  background-color:dodgerblue;
+#chat-screen {
+	background-color: dodgerblue;
 }
 
-#chat-screen .alt-header{
-  position: fixed;
-  top:20px;
-  width: 100%;
-  box-sizing: border-box;
+#chat-screen .alt-header {
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	box-sizing: border-box;
 }
-#chat-screen .status-bar{
-  top: -5px;
-  z-index: 1;
-  padding: 10px 0;
-  
+#chat-screen .status-bar {
+	top: -5px;
+	z-index: 1;
+	padding: 10px 0;
 }
 
 #chat-screen .status-bar,
-#chat-screen .alt-header{
-  background-color:dodgerblue;
+#chat-screen .alt-header {
+	background-color: dodgerblue;
 }
 
-
-.alt-column span:last-child i{
-margin-left: 20px;
+.alt-column span:last-child i {
+	margin-left: 20px;
 }
 
-.main-chat{
-  margin-top: 120px;
+.main-chat {
+	margin-top: 120px;
 }
 
-.chat-timestamp{
-  background-color: rgb(90, 90, 90);
-  color: white;
-  padding: 10px;
-  border-radius: 25px;
-  font-size: 12px;
-  font-weight:300;
-  margin-bottom: 5px;
-
+.chat-timestamp {
+	background-color: rgb(90, 90, 90);
+	color: white;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 5px;
 }
 
-.main-chat{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-chat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.message-row img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  margin-right: 10px;
+.message-row img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-right: 10px;
 }
 
-.message-row{
-  display: flex;
-  width: 100%; 
-  align-items: center;
-  margin-bottom: 5px;
+.message-row {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	margin-bottom: 5px;
 }
 
-.message-row__author{
-  color: var(--color-dark-grey);
-  display: block;
-  margin-bottom: 5px;
-  font-size: 18px;
+.message-row__author {
+	color: var(--color-dark-grey);
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
 }
-.message-row__time{
-  color: var(--color-dark-grey);
-  font-size: 13px;
-}
-
-.message-row__info{
-  display: flex;
-  align-items: end;
+.message-row__time {
+	color: var(--color-dark-grey);
+	font-size: 13px;
 }
 
-.message-row__bubble{
-  background-color: white;
-  padding: 10px;
-  border-radius: 12px;
-  border-top-left-radius: 0;
-  margin-right: 10px;
+.message-row__info {
+	display: flex;
+	align-items: end;
 }
 
-.message-row__own{
-  justify-content: flex-end;
-
+.message-row__bubble {
+	background-color: white;
+	padding: 10px;
+	border-radius: 12px;
+	border-top-left-radius: 0;
+	margin-right: 10px;
 }
 
-.message-row__own .message-row__bubble{
-  border-top-right-radius: 0px;
-  border-top-left-radius: 12px;
-  margin-right: 0;
-  margin-left: 10px;
+.message-row__own {
+	justify-content: flex-end;
 }
 
-.message-row__own .message-row__info{
-  flex-direction: row-reverse;
+.message-row__own .message-row__bubble {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 12px;
+	margin-right: 0;
+	margin-left: 10px;
 }
 
-.reply{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 25px;
-  box-sizing: border-box;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
+.message-row__own .message-row__info {
+	flex-direction: row-reverse;
 }
 
-.reply input{
-  transition: all 0.3s ease-in-out;
-}
-.reply-column:first-child{
-  width: 10%;
-}
-.reply-column:first-child i{
-  font-size: 25px;
-  
-}
-
-.reply-column:last-child{
-  width: 90%;
+.reply {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 25px;
+	box-sizing: border-box;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
 }
 
-.reply-column:last-child input{
-  width: 95%;
-  padding: 10px;
-  border-radius: 15px;
-  border: var(--border-main);
+.reply input {
+	transition: all 0.3s ease-in-out;
+}
+.reply-column:first-child {
+	width: 10%;
+}
+.reply-column:first-child i {
+	font-size: 25px;
+}
+
+.reply-column:last-child {
+	width: 90%;
+}
+
+.reply-column:last-child input {
+	width: 95%;
+	padding: 10px;
+	border-radius: 15px;
+	border: var(--border-main);
 }
 
 .reply-column:last-child > i,
-.reply-column:last-child button{
-  position: absolute;
+.reply-column:last-child button {
+	position: absolute;
 }
 
-
-.reply-column:last-child > i{
-  right: 68px;
-  top: 12px;
-  font-size: 25px;
-  font-weight: 100;
+.reply-column:last-child > i {
+	right: 68px;
+	top: 12px;
+	font-size: 25px;
+	font-weight: 100;
 }
 
-.reply-column:last-child button{
-  right: 30px;
-  top: 9px;
-  background-color: var(--color-yellow);
-  border: var(--border-main);
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+.reply-column:last-child button {
+	right: 30px;
+	top: 9px;
+	background-color: var(--color-yellow);
+	border: var(--border-main);
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
 }
 
 .reply-column:last-child button:focus,
-.reply-column:last-child button:active{
-  outline: none;
+.reply-column:last-child button:active {
+	outline: none;
 }
 
-@keyframes conversationFly__friend{
-  from{
-    opacity: 0;
-    transform: translateX(-100px);
-
-  }
-  to{
-    opacity: 1;
-    transform:translateX(0);
-  }
+@keyframes conversationFly__friend {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 /* friend의 대화창이 다 나오면 me의 대화창이 나오도록 하고 싶은데 아직 해결 못함 */
-@keyframes conversationFly__me{
-  from{
-    opacity: 0;
-    transform: translateX(100px);
-
-  }
-  to{
-    opacity: 1;
-    transform:translateX(0);
-  }
+@keyframes conversationFly__me {
+	from {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
-.message-row__friend{
-  animation:conversationFly__friend 0.5s linear ;
-  
+.message-row__friend {
+	animation: conversationFly__friend 0.5s linear;
 }
 
-.message-row__own{
-  animation: conversationFly__me 0.5s linear;
-
+.message-row__own {
+	animation: conversationFly__me 0.5s linear;
 }
 
-
-.reply:focus-within .reply-column:first-child{
-  opacity: 0;
+.reply:focus-within .reply-column:first-child {
+	opacity: 0;
 }
 
-
-.reply:focus-within input{
-  width: 93vw;
-  transform: translateX(-13%)
-  
+.reply:focus-within input {
+	width: 93vw;
+	transform: translateX(-13%);
 }
 
-.reply:focus-within .reply-column:last-child button{
-  right: 13px;
+.reply:focus-within .reply-column:last-child button {
+	right: 13px;
 }
 
-.reply:focus-within .fa-face-smile{
-  right: 50px;
+.reply:focus-within .fa-face-smile {
+	right: 50px;
 }
 
 .reply .fa-face-smile,
-.reply .reply-column:last-child button{
-  transition: all 0.3s ease-in-out;
+.reply .reply-column:last-child button {
+	transition: all 0.3s ease-in-out;
 }
