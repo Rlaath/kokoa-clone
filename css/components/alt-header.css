@@ -1,31 +1,28 @@
 .alt-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  padding: var(--horizontal-space);
-  margin-bottom: 10px;
-  font-size: large;
-
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	padding: var(--horizontal-space);
+	margin-bottom: 10px;
+	font-size: large;
 }
 
-.alt-header .alt-column{
-  width: 33%;
+.alt-header .alt-column {
+	width: 33%;
 }
 
 .alt-header .alt-column:first-child {
-  margin-right: auto;
+	margin-right: auto;
 }
-.alt-header .alt-column:nth-child(2){
-  text-align: center;
+.alt-header .alt-column:nth-child(2) {
+	text-align: center;
 }
 
 .alt-header .alt-column:last-child {
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
 }
-.alt-header span{
-  font-weight: 600;
+.alt-header span {
+	font-weight: 600;
 }
-
